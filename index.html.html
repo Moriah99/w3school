@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>W3Schools Replica</title>
+  <style>
+    /* ---------- Reset ---------- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #fff;
+      color: #222;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ---------- Top Bar ---------- */
+    .topbar {
+      background: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+      font-size: 14px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+    }
+    .topbar a {
+      color: #555;
+      font-weight: 500;
+    }
+    .topbar a:hover { color: #000; }
+
+    /* ---------- Header ---------- */
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: #282A35;
+      color: white;
+    }
+    header h1 {
+      font-size: 56px;
+      font-weight: bold;
+      color: #04AA6D;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    /* ---------- Search ---------- */
+    .search-box {
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 14px 16px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .search-box input:focus {
+      outline: 2px solid #04AA6D;
+    }
+
+    /* ---------- Tutorials Grid ---------- */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #eee;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #04AA6D;
+    }
+    .card p {
+      font-size: 15px;
+      color: #444;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: #282A35;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    footer a { color: #04AA6D; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 600px) {
+      header h1 { font-size: 38px; }
+      header p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <a href="#">Get Certified</a>
+    <a href="#">Academy</a>
+    <a href="#">Log in</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>W3Schools</h1>
+    <p>Learn to Code with the world’s largest web developer site.</p>
+    <div class="search-box">
+      <input type="search" placeholder="Search our tutorials...">
+    </div>
+  </header>
+
+  <!-- Tutorials Grid -->
+  <section class="grid">
+    <div class="card">
+      <h2>HTML</h2>
+      <p>The language for building web pages</p>
+    </div>
+    <div class="card">
+      <h2>CSS</h2>
+      <p>The language for styling web pages</p>
+    </div>
+    <div class="card">
+      <h2>JavaScript</h2>
+      <p>The language for programming web pages</p>
+    </div>
+    <div class="card">
+      <h2>Python</h2>
+      <p>A popular programming language</p>
+    </div>
+    <div class="card">
+      <h2>SQL</h2>
+      <p>The language for managing databases</p>
+    </div>
+    <div class="card">
+      <h2>Bootstrap</h2>
+      <p>A CSS framework for responsive design</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>W3Schools Clone © 2025 • Built for practice. Inspired by <a href="https://www.w3schools.com/">W3Schools</a></p>
+  </footer>
+
+</body>
+</html>
